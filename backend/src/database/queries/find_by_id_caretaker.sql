@@ -1,0 +1,1 @@
+SELECT * FROM caretaker WHERE id = $1;
