@@ -65,6 +65,13 @@ npm start
 npm install
 ```
 
+7. Para rodar o frontend
+
+```
+npm run dev
+```
+
+
 OBS:  A tabela de bando de dados é gerada automaticamente.
  
 ```
