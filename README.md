@@ -54,7 +54,7 @@ DB_PORT = 5432
 Em Produção:
 ```
 npm build
-npm run start
+npm start
 ```
 Em desenvolvimento
 ```
