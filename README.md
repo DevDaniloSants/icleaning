@@ -16,27 +16,68 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 - PostgreSQL
 - NodeJs
 
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- NODEJS 21.6.0
+- PostgreSQL
+
 ## 🚀 Instalando ICleaning
 
 Para instalar o ICleaning, siga estas etapas:
 
 1. Clone o repositório.
-2. Entre dentro da pasta backend, e no terminal execute o comando.
+2. Entre dentro da pasta backend, e no terminal execute o comando abaixo. Após isso verifique se todas as dependências foram instaladas corretamente.
 
 ```
 npm install
 ```
 
-3. Verifique se todas as dependências foram instaladas corretamente.
-4. Rodando o backend, após verificar que tudo está instalado.
+4. É necessário criar um arquivo .env na raiz da pasta backend com as seguintes informações:
+
+```
+PORT =
+DB_HOST =
+DB_NAME =
+DB_USER =
+DB_PASSWORD =
+DB_PORT =
+```
+
+4. Rodando o backend, após verificar que tudo está instalado.Verifique se todas as dependências foram instaladas corretamente
+
+4.1 Para rodar em desenvolvimento
 
 ```
 npm run dev
 ```
 
-6. Repita as etapas na pasta frontend.
+4.2 Para rodar em produção
 
-OBS: A tabela de bando de dados é gerada automaticamente, mas pode ser facilmente encontrada em /backend/src/database/migrations.
+```
+npm start
+```
+
+6. Entre dentro da pasta frontend, e no terminal execute o comando abaixo. Após isso verifique se todas as dependências foram instaladas corretamente.
+
+```
+npm install
+```
+
+OBS:  A tabela de bando de dados é gerada automaticamente.
+ 
+```
+CREATE TABLE IF NOT EXISTS customer (
+    id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(50),
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(16) NOT NULL,
+    lat_x FLOAT8 NOT NULL,
+    long_y FLOAT8 NOT NULL
+);
+
+```
 
 ## :child: Author
 
