@@ -50,6 +50,11 @@ const RegisterCustomer = () => {
 
       dispatch(register(newCustomer));
       setInputError('');
+      setName('');
+      setEmail('');
+      setPhone('');
+      setLat('');
+      setLongitude('');
     }
   };
 
