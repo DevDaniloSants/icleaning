@@ -51,6 +51,12 @@ DB_PORT = 5432
 
 4. Rodando o backend, após verificar que tudo está instalado.Verifique se todas as dependências foram instaladas corretamente
 
+Em Produção:
+```
+npm build
+npm run start
+```
+Em desenvolvimento
 ```
 npm run dev
 ```
