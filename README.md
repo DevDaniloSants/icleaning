@@ -21,7 +21,9 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - NODEJS 21.6.0
+<a href="https://nodejs.org/en/download">Download</a>
 - PostgreSQL
+<a href="https://www.postgresql.org/download/">Download</a>
 
 ## 🚀 Instalando ICleaning
 
@@ -36,13 +38,15 @@ npm install
 
 4. É necessário criar um arquivo .env na raiz da pasta backend com as seguintes informações:
 
+OBS: preenchimento fictício
+
 ```
-PORT =
-DB_HOST =
-DB_NAME =
-DB_USER =
-DB_PASSWORD =
-DB_PORT =
+PORT = 5000
+DB_HOST = localhost
+DB_NAME = caretaker-api
+DB_USER = postgre
+DB_PASSWORD = teste
+DB_PORT = 5432
 ```
 
 4. Rodando o backend, após verificar que tudo está instalado.Verifique se todas as dependências foram instaladas corretamente
