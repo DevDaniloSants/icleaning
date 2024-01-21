@@ -5,7 +5,6 @@ export const useMenu = () => {
 
   const toggleMenu = () => {
     setOpen(!open);
-    console.log(open);
   };
 
   return { open, toggleMenu };
