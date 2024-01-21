@@ -1,4 +1,4 @@
-import getDistance from 'geolib/es/getDistance';
+import orderByDistance from 'geolib/es/getDistance';
 
 import customerRepository from '../repository/customerRepository';
 
@@ -23,19 +23,18 @@ class CustomerService {
     try {
       const customers = await customerRepository.findAll();
 
+      //  company's home location
       const startingLocation = { latitude: 0, longitude: 0 };
 
-      // Adds the company's home location
       const customersWithLocation = customers.map((customer) => {
         const latitude = customer.lat_x;
         const longitude = customer.long_y;
 
-        console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-
+        // check is value exists and is a number
         if (!isNaN(latitude) && !isNaN(longitude)) {
           return {
             ...customer,
-            distance: getDistance(startingLocation, {
+            distance: orderByDistance(startingLocation, {
               latitude,
               longitude,
             }),
