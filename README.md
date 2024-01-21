@@ -47,16 +47,8 @@ DB_PORT =
 
 4. Rodando o backend, após verificar que tudo está instalado.Verifique se todas as dependências foram instaladas corretamente
 
-4.1 Para rodar em desenvolvimento
-
 ```
 npm run dev
-```
-
-4.2 Para rodar em produção
-
-```
-npm start
 ```
 
 6. Entre dentro da pasta frontend, e no terminal execute o comando abaixo. Após isso verifique se todas as dependências foram instaladas corretamente.
