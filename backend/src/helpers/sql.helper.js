@@ -7,7 +7,7 @@ export const runMigration = async () => {
   try {
     const migrationFilePath = path.join(
       __dirname,
-      '../database/migrations/create_table_caretaker.sql',
+      '../database/migrations/create_table_customer.sql',
     );
 
     const migrationSql = fs.readFileSync(migrationFilePath, 'utf-8');

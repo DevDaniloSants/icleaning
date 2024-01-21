@@ -6,7 +6,7 @@ import customerRoutes from './routes/customerRoutes';
 
 import express from 'express';
 import cors from 'cors';
-import caretakerRepository from './repository/CaretakerRepository';
+import customerRepository from './repository/customerRepository';
 
 // Config do express
 class App {
@@ -18,7 +18,7 @@ class App {
   }
 
   database() {
-    caretakerRepository.init();
+    customerRepository.init();
   }
 
   middlewares() {

@@ -1,11 +1,11 @@
-import caretakerController from '../controllers/caretakerController';
+import customerController from '../controllers/customerController';
 
 const express = require('express');
 const router = express.Router();
 
 // routers
-router.get('/', caretakerController.show);
-router.post('/', caretakerController.register);
-router.get('/:id', caretakerController.index);
+router.get('/', customerController.show);
+router.post('/', customerController.register);
+router.get('/routes', customerController.sortOder);
 
 export default router;

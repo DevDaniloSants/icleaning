@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS caretaker (
-    id SERIAL PRIMARY KEY NOT NULL ,
-    name VARCHAR(50),
-    email VARCHAR(100) UNIQUE NOT NULL,
-    phone VARCHAR(16) NOT NULL
-);
